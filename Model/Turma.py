@@ -1,8 +1,12 @@
 class Turma:
     def __init__(self):
+        self.__codigo = None
         self.__disciplina = None  # Associação: Cada Turma recebe uma única Disciplina
         self.__aluno = []  # Associação: Turma recebe uma lista de objetos "Aluno"
         self.__professor = None  # Associação: Cada turma recebe um único objeto "Professor"
+
+    def setCodigo(self, codigo):
+        self.__codigo = codigo
 
     def setDisciplina(self, disciplina):
         self.__disciplina = disciplina
@@ -12,6 +16,9 @@ class Turma:
 
     def setProfessor(self, professor):
         self.__professor = professor
+
+    def getCodigo(self):
+        return self.__codigo
 
     def getDisciplina(self):
         return self.__disciplina
