@@ -28,3 +28,12 @@ class Curso:
 
     def getAluno(self):
         return self.__aluno
+
+    def remove_turma(self, turma):
+        if turma in self.__turma:
+            self.__turma.remove(turma)
+
+    def remove_aluno(self, aluno):
+        if aluno in self.__aluno:
+            self.__aluno.remove(aluno)
+

@@ -28,3 +28,7 @@ class Turma:
 
     def getProfessor(self):
         return self.__professor
+
+    def remove_aluno(self, aluno):
+        if aluno in self.__aluno:
+            self.__aluno.remove(aluno)
